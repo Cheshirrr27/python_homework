@@ -1,23 +1,25 @@
-name1 = "незнакомец"
-name2 = "мистееер"
+name1 = "Константин"
+name2 = "мистееер Кот" # значение (имя) пишется в кавычках
 
 print("Hello, " + name1)
-print("Чей сам будешь, " + name2)
+print("Как сам, " + name2)
 print("С какой целью интересуешься, " + name1)
 print("Зачем такой грубый, а, " + name2)
 
-name = 10
+name = 10 # числовое значение пишется числом БЕЗ дополнительных символов
 
 print(name)
 
-random_bool = True
+random_bool = True # True и False пишутся без дополнительных символов, обязательно с большой буквы
 
 print(random_bool)
 
-numbers = [10, 20, 30, 40, 50]
+# СПИСКИ
+
+numbers = [10, 20, 30, 40, 50] # список пишется в КВАДРАТНЫХ скобках, через ЗАПЯТУЮ. Значение (имя), пишется в кавычках, внутри квадратных скобок.
 
 print(numbers[0])
-print(numbers[4])
+print(numbers[-1])
 
 weekDays = [
     "понедельник",
@@ -29,21 +31,19 @@ weekDays = [
     "воскресенье"
 ]
 
-total_days = len(weekDays)
-print(total_days)
 
-#сокращение функции len
-print(len(weekDays))
+print(len(weekDays)) #сокращение функции len
 
-mondey = weekDays[0]
+mondey = weekDays[0] # индекс указывается в квадратных скобках
 print(mondey)
 
 thursday = weekDays[3]
 print(thursday)
-#сокращение за счёт того, что не прописана лишняя переменная, знак равенства не нужен, т.к. выводим только значение
-print(weekDays[6])
+print(weekDays[6]) #сокращение за счёт того, что не прописана лишняя переменная, знак равенства не нужен, т.к. выводим только значение
 
-def greet(name):
+# ФУНКЦИИ
+
+def greet(name): # 
     print("Hello, " + name)
 
 
@@ -99,46 +99,4 @@ p = pls(28, 7, 5)
 print(p)
 
 #Области видимости переменной
-
-GlobalVar = 1
-
-def print_global():
-    print(GlobalVar)
-
-def print_local():
-    locale = 2
-    print(locale)
-
-print_global()
-print_local()
-
-#print(local) выдаст ошибку, т.к. local находится в функции print_local(), и кроме этой функции нигдк использоваться не может.
-
-#СТЕК ВЫЗОВОВ
-
-def funcA():
-    print("Начали выполнять функцию А")
-    funcB()
-    print("Закончили выполнять функцию А")
-
-def funcB():
-    print("Начали выполнять функцию В")
-    funcC()
-    print("Закончили выполнять функцию В")
-
-def funcC():
-    print("Начали выполнять функцию C")
-    funcD()
-    print("Закончили выполнять функцию C")
-
-def funcD():
-    print("Начали выполнять функцию D")
-    print("Закончили выполнять функцию D")
-
-funcA()
-
-def endless():
-    print(endless)
-    endless()
-
-endless()
+print ('Hello, World')
